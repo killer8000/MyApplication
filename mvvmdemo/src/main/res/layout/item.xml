@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical">
+    <data>
+        <variable
+            name="news"
+            type="performance.com.example.ndh.mvvmdemo.module.news.NetResult.NewsBean"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/tv_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:text="@{news.title}"
+            android:textColor="@{(news.state==0)? @color/colorPrimary : @color/colorAccent}"
+            android:textSize="20dp"/>
+    </LinearLayout>
+</layout>

@@ -1,1 +1,1 @@
-include ':rxandroiddemo', ':mvpdemo', ':mvvmdemo'
+include  ':constraintlayoutdemo'
